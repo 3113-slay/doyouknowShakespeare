@@ -1,0 +1,77 @@
+body{
+  background-image: url("bg.png");
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 50px;
+  color: #C6DEE8;
+  font-family: 'KaiTi', serif;
+}
+
+h2{
+  font-weight: bold;
+  font-size: 50px;
+   color: #C6DEE8;
+   font-family: 'KaiTi', serif;
+}
+
+h3{
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'KaiTi', serif;
+}
+
+.title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.button{
+  background-color: #FEDCAC; 
+  border: 2px solid #FEDCAC; 
+  display: inline-block;
+  border-radius: 10px;
+  border: none;
+  color: #4A4A4A; 
+  text-align: center;
+  font-size: 20px;
+  padding: 12px;
+  width: 250px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: 'KaiTi', serif;
+  font-weight:bold;
+}
+
+.button span{
+  display: inline-block;
+  transition: 1.5s;
+}
+.button span::after{
+  content: '\00bb';
+  position: absolute;
+  bottom: 45px;
+  right: 80px;
+  opacity: 0;
+  transition: 1.5s;
+}
+.button:hover span::after{
+  padding-right: 25px;
+  opacity: 1;
+}
+.button:hover span{
+  padding-right: 25px;
+}
+
+.credit{
+  position: absolute;
+  bottom: 0px;
+  color: #C6DEE8;
+}
